@@ -1,0 +1,42 @@
+.row{
+    margin-left: 20px;
+}
+.row__posters{
+    display: flex;
+    /*permet de faire defiler les element vers la gauche et les cacher*/
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    
+    
+}
+
+/*permet d'enlever les scrollbar sur tout le site*/
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__poster{
+    /*permet de contenir qualité de l'image peut importe la hauteur de l'image*/
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    transition: transform 450ms;
+    margin-right: 10px;
+
+}
+
+.row__poster:hover{
+    transform: scale(1.08);
+    
+}
+
+.row___posterLarge{
+    max-height: 250px;
+    
+}
+
+.row___posterLarge:hover{
+    transform: scale(1.09);
+    
+}
